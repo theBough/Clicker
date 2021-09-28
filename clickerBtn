@@ -1,0 +1,15 @@
+function MakeButton(x,y,w,h,col,value){
+  this.x = x;
+  this.y = y;
+  this.w = w;
+  this.h = h;
+  this.col = col;
+  this.value = value;
+  this.show = true;
+  
+  this.display = function(){
+    let c = color(this.col);
+    fill(c);
+    ellipse(this.x,this.y, this.w,this.h)
+  }//end display
+}//end MakeButtons
